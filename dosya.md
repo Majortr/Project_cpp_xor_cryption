@@ -1,1 +1,0 @@
-BU DA BAŞKA BİŞEY
