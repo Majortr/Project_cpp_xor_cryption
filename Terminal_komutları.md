@@ -14,6 +14,10 @@ feature-menu → menü çalışması
 Yani herkes kendi işini ayrı dalda yapar.
 İş bitince ana projeye geri birleştirilir.
 
+1.5) Yeni oluşturulan Branch Pushlama
+
+git push --set-upstream origin (Branch adı)
+
 2) Neden branch kullanmalısınız?
 
 İkiniz de direkt main üzerinde çalışırsanız:
