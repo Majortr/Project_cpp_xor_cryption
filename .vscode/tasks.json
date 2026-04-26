@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build with cl",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "\"call \"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\"\" && cl /EHsc /Zi main.cpp input_validation.cpp file_processor.cpp xor_engine.cpp /Fe:project_cpp_cryption.exe\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$msCompile"
+      ]
+    }
+  ]
+}

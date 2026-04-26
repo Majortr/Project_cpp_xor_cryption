@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug project_cpp_cryption",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\project_cpp_cryption.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "integratedTerminal",
+      "preLaunchTask": "build with cl"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "console": "externalTerminal",
+      "cwd": "d:/Developer/Cpp/Project_cpp_cryption/Project_cpp_xor_cryption",
+      "program": "d:/Developer/Cpp/Project_cpp_cryption/Project_cpp_xor_cryption/build/Debug/outDebug"
+    }
+  ]
+}
