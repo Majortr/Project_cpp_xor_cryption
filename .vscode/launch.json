@@ -1,7 +1,15 @@
 {
-    // Olası öznitelikler hakkında bilgi edinmek için IntelliSense kullanın.
-    // Mevcut özniteliklerin açıklamalarını görüntülemek için üzerine gelin.
-    // Daha fazla bilgi için şu adresi ziyaret edin: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": []
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "console": "externalTerminal",
+      "cwd": "d:/Developer/Cpp/Project_cpp_cryption/Project_cpp_xor_cryption",
+      "program": "d:/Developer/Cpp/Project_cpp_cryption/Project_cpp_xor_cryption/build/Debug/outDebug"
+    }
+  ]
 }
