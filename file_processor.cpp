@@ -4,21 +4,16 @@
 
 /// Processes the input file by applying XOR encryption/decryption and writes the result to the output file
 FileProcessResult processFile(const std::string& inputPath, const std::string& outputPath, uint8_t key) {
-    std::ifstream inputFile(inputPath);
+    std::ifstream inputFile(inputPath, std::ios::binary);
     // Check if the input file was opened successfully
     if (!inputFile) {
         return FileProcessResult::InputFileOpenError;
     }
 
-    std::ofstream outputFile(outputPath);
+    std::ofstream outputFile(outputPath, std::ios::binary);
     // Check if the output file was opened successfully
     if (!outputFile) {
         return FileProcessResult::OutputFileOpenError;
-    }
-
-    std::ifstream writeFile(outputPath);
-    if (!writeFile) {
-        return FileProcessResult::WriteError;
     }
 
     char currentChar;
@@ -30,10 +25,18 @@ FileProcessResult processFile(const std::string& inputPath, const std::string& o
 
 
         outputFile.put(static_cast<char>(processedChar)); // Write the processed character to the output file
+        if (!outputFile) {
+            return FileProcessResult::WriteError;
+        }
     }
 
-    if (!inputFile) {
-        return FileProcessResult::ReadError; // Return read error if the input file cannot be read
+    if (inputFile.bad()) {
+        return FileProcessResult::ReadError;
+    }
+
+    outputFile.flush();
+    if (!outputFile) {
+        return FileProcessResult::WriteError;
     }
 
     return FileProcessResult::Success; // Return success if the file processing is completed without errors
