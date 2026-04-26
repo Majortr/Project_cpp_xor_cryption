@@ -1,4 +1,4 @@
-# Project 5: Text-Based File Encryption/Decryption Tool
+# Project : Text-Based File Encryption/Decryption Tool
 
 ## Project Description
 
