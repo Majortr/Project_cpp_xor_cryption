@@ -1,0 +1,18 @@
+===== XOR ENCRYPTION-DECRYPTION TEST TEXT =====
+
+Bilgisayar bilimi ve programlama, modern dünyada en önemli disiplinlerden biridir. Yazılım geliştirme, günlük yaşamımızda kullandığımız tüm teknolojilerin temelini oluşturmaktadır. Mobil uygulamalardan başlayarak, yapay zeka sistemlerine kadar her şey programlamalar tarafından kontrol edilmektedir.
+
+C++ dili, sistem programlama ve performans gerektiren uygulamalar için tercih edilen güçlü bir dildir. Veri şifreleme, kriptografi ve güvenlik protokolleri, internet üzerinde iletilen verilerimizi korumak için hayati önem taşımaktadır. XOR (Exclusive OR) işlemi, basit fakat etkili bir şifreleme yöntemidir.
+
+Bu test metni, şifrelemeden geçtikten sonra şifre çözüldüğünde orijinal haline dönmesini kontrol etmek için tasarlanmıştır. Farklı karakterler, sayılar, özel semboller ve Türkçe karakterleri içermektedir: ç, ğ, ı, ö, ş, ü, Ç, Ğ, İ, Ö, Ş, Ü!
+
+Matematiksel olarak, XOR işlemi kendi tersi olduğu için (A XOR B XOR B = A), aynı anahtar ile iki kez uygulandığında orijinal veriyi geri elde edebiliriz. Bu, simetrik şifrelemenin en basit örneğidir.
+
+Proje başarıyla tamamlanırsa, encrypt → decrypt döngüsünde hiçbir veri kaybı yaşanmayacak ve orijinal metin tam olarak kurtarılacaktır.
+
+===== Special Characters & Numbers Test =====
+!@#$%^&*()_+-=[]{}|;:,.<>?/~`
+0123456789 - ABCDEFGHIJKLMNOPQRSTUVWXYZ - abcdefghijklmnopqrstuvwxyz
+
+===== Tekrar Kontrol =====
+Şifrelenmiş metin şifre çözüldüğünde bu satır tamamen aynı görünmelidir. Her bir karakterin doğru şekilde işlenmesi kritik öneme sahiptir.
