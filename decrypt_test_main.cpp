@@ -3,9 +3,9 @@
 
 int main() {
     processFile(
-        "test_files/encrypted.txt",
-        "test_files/decrypted.txt",
-        7
+        "text_file/encrypted.txt",
+        "text_file/decrypted.txt",
+        3
     );
     return 0;
 }
